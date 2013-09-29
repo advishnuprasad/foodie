@@ -7,4 +7,8 @@ describe Foodie::Food do
   it "anything else is delicious" do
     Foodie::Food.portray("Fruits").should eql("Delicious!")
   end
+
+  it "pluralizes a word" do
+    Foodie::Food.pluralize("Tomato").should eql("Tomatoes")
+  end
 end
